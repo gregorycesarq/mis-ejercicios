@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cálculo de Áreas</title>
+    <script>
+        // Función para calcular el área de un cuadrado
+        function cuadrado(l) {
+            return l * l;
+        }
+        
+        // Función para calcular el área de un rectángulo
+        function rectangulo(l1, l2) {
+            return l1 * l2;
+        }
+        
+        // Función para calcular el área de un triángulo
+        function triangulo(b, h) {
+            return (b * h) / 2;
+        }
+        
+        // Función para mostrar los resultados en la página
+        function mostrarResultados() {
+            let autor = "Gregory Rafael César Rojas"; // Cambia esto por tu nombre
+            let ladoCuadrado = 5;
+            let baseRectangulo = 8, alturaRectangulo = 4;
+            let baseTriangulo = 20, alturaTriangulo = 10;
+            
+            let resultado = `<h2>Autor: ${autor}</h2>`;
+            resultado += `<p>Área del cuadrado de lado ${ladoCuadrado} cm = ${cuadrado(ladoCuadrado)} cm².</p>`;
+            resultado += `<p>Área del rectángulo de base ${baseRectangulo} cm y altura ${alturaRectangulo} cm = ${rectangulo(baseRectangulo, alturaRectangulo)} cm².</p>`;
+            resultado += `<p>Área del triángulo de base ${baseTriangulo} cm y altura ${alturaTriangulo} cm = ${triangulo(baseTriangulo, alturaTriangulo)} cm².</p>`;
+            
+            document.getElementById("resultado").innerHTML = resultado;
+        }
+    </script>
+</head>
+<body onload="mostrarResultados()">
+    <h1>Cálculo de Áreas</h1>
+    <div id="resultado"></div>
+</body>
+</html>
