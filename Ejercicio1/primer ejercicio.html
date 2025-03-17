@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Datos del Estudiante</title>
+</head>
+<body>
+    <h1>Información del Alumno</h1>
+    <div id="datos"></div>
+
+
+    <script>
+        
+        let nombre = "Gregory Cesar";
+        let edad = 20;
+        let ciudad = "Moca, República Dominicana";
+
+        document.getElementById("datos").innerHTML = `
+         <p><b>Nombre:</b> ${nombre}</p>
+         <p><b>Edad:</b> ${edad} años</p>
+        <p><b>Ciudad:</b> ${ciudad}</p>
+        <hr>
+        `;
+
+     </script>
+</body>
+</html>
